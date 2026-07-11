@@ -256,3 +256,4 @@ class QuestWatcher {
 }
 
 module.exports = { QuestWatcher };
+
