@@ -1,0 +1,28 @@
+{
+  "name": "zuest",
+  "version": "1.0.0",
+  "description": "Zuest — a Discord bot that completes Discord Quests on behalf of linked accounts.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "ws": "^8.21.0"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "quests",
+    "zuest"
+  ],
+  "author": "Zuest",
+  "license": "MIT"
+}

@@ -1,0 +1,18 @@
+# Nixpacks config for Railway — https://nixpacks.com/
+# Zuest is a plain Node.js Discord bot — no build step needed.
+
+[phases.setup]
+nixPkgs = ["nodejs_20", "python3", "gcc"]
+# python3 + gcc are needed by better-sqlite3 to compile its native bindings.
+
+[phases.install]
+cmds = ["npm ci --omit=dev || npm install --omit=dev"]
+
+[phases.build]
+cmds = ["echo 'No build step required for Zuest'"]
+
+[start]
+cmd = "node src/index.js"
+
+[variables]
+NODE_ENV = "production"
